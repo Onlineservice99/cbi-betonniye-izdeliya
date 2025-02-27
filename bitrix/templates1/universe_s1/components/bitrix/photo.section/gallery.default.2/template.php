@@ -197,6 +197,14 @@ $arSvg = [
                     </div>
                 </div>
             </div>
+            <? if(!empty($arResult['DESCRIPTION'])){?>
+                <div>
+                    <h2>Описание:</h2>
+                    <div>
+                        <p><?=$arResult['DESCRIPTION']?></p>
+                    </div>
+                </div>
+            <?}?>
             <div class="photo-section-footer">
                 <div class="photo-section-back">
                     <?= Html::beginTag('a', [
