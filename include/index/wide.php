@@ -14,8 +14,8 @@ use intec\core\io\Path;
  */
 
 $render($blocks->get('icons'));
-$render($blocks->get('advantages'));
 $render($blocks->get('sections'));
+$render($blocks->get('advantages'));
 $render($blocks->get('categories'));
 $render($blocks->get('products'));
 $render($blocks->get('product-day'));

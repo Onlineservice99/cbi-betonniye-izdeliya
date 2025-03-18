@@ -117,11 +117,11 @@ $arVisual = $arResult['VISUAL'];
                         </div>
                     <?php } ?>
                     <?php if ($arResult['AUTHORIZATION']['SHOW']['DESKTOP']) { ?>
-                        <div class="widget-authorization-container intec-grid-item-auto">
+                        <?/*<div class="widget-authorization-container intec-grid-item-auto">
                             <div class="widget-authorization">
                                 <?php include(__DIR__.'/../../../parts/auth/panel.4.php') ?>
                             </div>
-                        </div>
+                        </div>*/?>
                     <?php } ?>
                     <?php if ($arResult['BASKET']['SHOW']['DESKTOP'] || $arResult['DELAY']['SHOW']['DESKTOP'] || $arResult['COMPARE']['SHOW']['DESKTOP']) { ?>
                         <div class="widget-basket-container intec-grid-item-auto">

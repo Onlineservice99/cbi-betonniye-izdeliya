@@ -240,7 +240,7 @@ $fRender = function ($arItems, $iLevel, $arParent = null) use (&$fRender, &$arVi
                                 <?php } ?>
 
                                 <?php if ($arVisual['AUTHORIZATION']['SHOW']) { ?>
-                                    <?php include(__DIR__.'/parts/auth/panel.php') ?>
+                                    <?/*php include(__DIR__.'/parts/auth/panel.php') */?>
                                 <?php } ?>
 
                                 <?php if ($arVisual['BASKET']['SHOW'] || $arVisual['DELAY']['SHOW'] || $arVisual['COMPARE']['SHOW']) { ?>
