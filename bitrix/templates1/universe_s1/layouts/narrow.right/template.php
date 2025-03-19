@@ -74,7 +74,6 @@ $handle = function ($part) use ($isInEditor) {
                 <div class="intec-template-layout-content">
                     <div class="intec-template-layout-columns">
                         <div class="intec-template-layout-column intec-template-layout-column-adaptive" data-global-role="content">
-                            <div class="intec-template-layout-column-wrapper">
                                 <?php $handle('contentBegin') ?>
 <?php } ?>
                                 <?php $this->renderZone($zones->get('default')) ?>

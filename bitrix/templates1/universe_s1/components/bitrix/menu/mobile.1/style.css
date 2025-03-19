@@ -39,13 +39,14 @@
 .ns-bitrix.c-menu.c-menu-mobile-1 .menu-panel-wrapper {
   padding: 0 20px;
   height: 100%;
+  background-color: #2d6e6e !important;
 }
 .ns-bitrix.c-menu.c-menu-mobile-1 .menu-panel-button {
   width: 18px;
   font-size: 18px;
   line-height: 1;
   cursor: pointer;
-  color: #1d1d1d;
+  color: #ffffff;
   -webkit-transition: color 350ms;
   -moz-transition: color 350ms;
   -ms-transition: color 350ms;
@@ -58,7 +59,7 @@
 .ns-bitrix.c-menu.c-menu-mobile-1 .menu-panel-logotype {
   display: inline-block;
   vertical-align: middle;
-  width: 130px;
+  width: 100px;
   color: #1d1d1d;
   text-decoration: none;
   position: relative;

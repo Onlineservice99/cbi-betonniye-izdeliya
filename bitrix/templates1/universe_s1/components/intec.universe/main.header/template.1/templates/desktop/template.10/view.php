@@ -54,7 +54,7 @@ $arVisual = $arResult['VISUAL'];
                                     'intec-ui-picture'
                                 ],
                                 'style' => [
-                                    'width' => '100px'
+                                    'width' => '140px'
                                 ]
                             ]) ?>
                                 <?php include(__DIR__.'/../../../parts/logotype.php') ?>

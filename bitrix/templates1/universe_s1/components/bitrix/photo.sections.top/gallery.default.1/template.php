@@ -28,6 +28,10 @@ $arSvg = [
             <div class="photo-sections-top-sections">
                 <div class="intec-grid intec-grid-wrap intec-grid-i-16">
                     <?php foreach ($arResult['SECTIONS'] as $arSection) {
+                         // Пропускаем секцию с ID 58
+                         if ($arSection['ID'] == 58) {
+                            continue;
+                        }
 
                         $sId = $sTemplateId.'_'.$arSection['ID'];
                         $sAreaId = $this->GetEditAreaId($sId);

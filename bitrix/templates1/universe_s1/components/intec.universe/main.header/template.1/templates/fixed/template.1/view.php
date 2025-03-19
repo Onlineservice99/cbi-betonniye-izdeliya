@@ -98,7 +98,7 @@ $bBasketShow =
                     </div>
                 <?php } ?>
                 <?php if ($arResult['AUTHORIZATION']['SHOW']['FIXED']) { ?>
-                    <?/*<div class="widget-authorization-wrap intec-grid-item-auto">
+                <?/*<div class="widget-authorization-wrap intec-grid-item-auto">
                         <div class="widget-item widget-authorization">
                             <?php include(__DIR__.'/../../../parts/auth/icons.php') ?>
                         </div>
