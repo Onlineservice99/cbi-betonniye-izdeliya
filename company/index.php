@@ -2,6 +2,7 @@
 
 $APPLICATION->SetTitle("О компании");
 
+
 ?>
 <style>
 :root {
@@ -296,8 +297,6 @@ body {
 </style>
 
 
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
 <section class="elementor-section elementor-top-section elementor-element" style="position: relative;margin-bottom:60px;">
 	<div class="intec-content">
 		<div class="intec-content-wrapper" style="position: relative;">
@@ -362,40 +361,40 @@ body {
 		</div>
 	</div>
 </section>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script>
-    // Инициализация слайдера
-    const productionSlider = new Swiper('.image-card-container', {
-        loop: true,
-        speed: 600,
-        autoplay: {
-            delay: 5000,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            768: {
-                allowTouchMove: true,
+    $(document).ready(function(){
+
+
+        // Инициализация слайдера
+        const productionSlider = new Swiper('.image-card-container', {
+            loop: true,
+            speed: 600,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    allowTouchMove: true,
+                }
             }
-        }
-    });
+        });
+
+    })
 </script>
 
 
 <style>
 /* Стили для слайдера */
-.swiper-container {
-    max-width: 100%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
+
 
 .swiper-pagination-bullet {
     background: #2d6e6e !important;
@@ -597,33 +596,33 @@ body {
 }
 </style>
 
-<!-- Подключение необходимых скриптов -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script>
+    $(document).ready(function() {
 // Инициализация слайдера сертификатов
-const certSlider = new Swiper('.certificates-slider', {
-    loop: true,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    breakpoints: {
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 20
-        },
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 10
-        }
-    }
-});
+        const certSlider = new Swiper('.certificates-slider', {
+            loop: true,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            }
+        });
+    })
 </script>
 <!-- Продукция -->
 <section class="section" style="background: var(--secondary);">

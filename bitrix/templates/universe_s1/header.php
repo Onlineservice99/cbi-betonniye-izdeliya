@@ -67,6 +67,11 @@ $part = Constructor::isLite() ? 'lite' : 'base';
             <script type="text/javascript"><?= $template->getJs() ?></script>
         <?php } ?>
         <?php if (FileHelper::isFile($directory.'/parts/custom/header.end.php')) include($directory.'/parts/custom/header.end.php') ?>
+
+        <?php
+            $APPLICATION->SetAdditionalCSS("/assets/swiper-bundle.min.css");
+            $APPLICATION->AddHeadScript("/assets/swiper-bundle.min.js");
+        ?>
     </head>
     <body class="public intec-adaptive">
         <?php if (FileHelper::isFile($directory.'/parts/custom/body.start.php')) include($directory.'/parts/custom/body.start.php') ?>
