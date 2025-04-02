@@ -187,7 +187,7 @@ body {
 	}
 
 	.timeline-dot {
-		left: 40px;
+		left: 20px;
 	}
 }
 
@@ -264,9 +264,18 @@ body {
 
 .card-text {
     color: rgba(255,255,255,0.8);
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 25px;
     margin-bottom: 20px;
+}
+.intec-content-wrapper .grid>.card p,
+.card-text,
+.timeline-item .timeline-content p,
+.intec-content .intec-content-wrapper .card>p,
+.intec-content-wrapper .grid .feature>p{
+    font-size: 16px;
+    line-height: 25px;
+    font-family: inherit;
 }
 
 .card-button {
@@ -292,6 +301,29 @@ body {
 	.img-comp{height:400px !important;}
 	.card-content p{display:none;}
 	.card-title {margin-bottom: 25px;}
+}
+@media(max-width: 740px){
+    .intec-content .intec-content-wrapper{
+        margin: 0;
+    }
+    .intec-content {
+        max-width: 100%;
+        min-width: 280px;
+        box-sizing: border-box;
+    }
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+@media(min-width: 1200px){
+    .intec-content-wrapper .grid>.card p,
+    .card-text,
+    .timeline-item .timeline-content p,
+    .intec-content .intec-content-wrapper .card>p,
+    .intec-content-wrapper .grid .feature>p{
+        font-size: 18px;
+        line-height: 27px;
+    } 
 }
 
 </style>
@@ -355,7 +387,7 @@ body {
 						Производство с использованием немецкого оборудования 
 						FRIMA и автоматизированных линий
 					</p>
-					<a href="#" class="card-button">Подробнее</a>
+					<!--<a href="#" class="card-button">Подробнее</a>-->
 				</div>
 			</div>
 		</div>
@@ -482,49 +514,43 @@ body {
 				<h2 class="section-title">Сертификаты качества</h2>
 				
 				<!-- Слайдер сертификатов -->
-				<div class="certificates-slider swiper-container" data-aos="fade-up">
-					<div class="swiper-wrapper">
-						<!-- Сертификат 1 -->
-						<div class="swiper-slide certificate-item">
-							<!-- Изображение с Fancybox для просмотра -->
-							<a href="/company/img/sertificate1.png" target="_blank">
-								<img src="/company/img/sertificate1.png" 
-									class="certificate-image" 
-									alt="Сертификат соответствия 2020">
-							</a>
-							
-							<!-- Отдельная ссылка для скачивания -->
-							<div class="certificate-caption">
-								<a href="/company/img/sertificate1.png" 
-								class="certificate-link"
-								download="sertificate1.png"> <!-- Имя файла для сохранения -->
-								Скачать Сертификат
-								</a>
-							</div>
-						</div>
-						
-						<div class="swiper-slide certificate-item">
-							<!-- Изображение с Fancybox для просмотра -->
-							<a href="/company/img/sertificate2.png" target="_blank">
-								<img src="/company/img/sertificate2.png" 
-									class="certificate-image" 
-									alt="Сертификат соответствия 2020">
-							</a>
-							
-							<!-- Отдельная ссылка для скачивания -->
-							<div class="certificate-caption">
-								<a href="/company/img/sertificate2.png" 
-								class="certificate-link"
-								download="sertificate2.png"> <!-- Имя файла для сохранения -->
-								Скачать Сертификат
-								</a>
-							</div>
-						</div>
-					</div>
-					
-					<!-- Навигация слайдера -->
-					<div class="swiper-button-next cert-nav"></div>
-					<div class="swiper-button-prev cert-nav"></div>
+				<div class="certificates-slider" data-aos="fade-up">
+					<!-- Сертификат 1 -->
+                    <div class="certificate-item">
+                        <!-- Изображение с Fancybox для просмотра -->
+                        <a href="/company/img/sertificate1.png" target="_blank">
+                            <img src="/company/img/sertificate1.png"
+                                 class="certificate-image"
+                                 alt="Сертификат соответствия 2020">
+                        </a>
+
+                        <!-- Отдельная ссылка для скачивания -->
+                        <div class="certificate-caption">
+                            <a href="/company/img/sertificate1.png"
+                               class="certificate-link"
+                               download="sertificate1.png"> <!-- Имя файла для сохранения -->
+                                Скачать Сертификат
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-item">
+                        <!-- Изображение с Fancybox для просмотра -->
+                        <a href="/company/img/sertificate2.png" target="_blank">
+                            <img src="/company/img/sertificate2.png"
+                                 class="certificate-image"
+                                 alt="Сертификат соответствия 2020">
+                        </a>
+
+                        <!-- Отдельная ссылка для скачивания -->
+                        <div class="certificate-caption">
+                            <a href="/company/img/sertificate2.png"
+                               class="certificate-link"
+                               download="sertificate2.png"> <!-- Имя файла для сохранения -->
+                                Скачать Сертификат
+                            </a>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -534,17 +560,31 @@ body {
 <!-- Стили для сертификатов -->
 <style>
 .certificates-slider {
-    max-width: 800px;
     padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .certificate-item {
     text-align: center;
+    max-width: 375px;
     padding: 20px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
+}
+@media(min-width: 576px){
+    .certificates-slider{
+        flex-direction: row;
+
+        justify-content: center;
+    }
+    .certificate-item{
+        width: calc( 50% - 5px );
+    }
 }
 
 .certificate-item:hover {
@@ -586,9 +626,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .certificates-slider {
-        max-width: 70%;
-    }
     
     .certificate-item {
         padding: 15px;
@@ -597,33 +634,7 @@ body {
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script>
-    $(document).ready(function() {
-// Инициализация слайдера сертификатов
-        const certSlider = new Swiper('.certificates-slider', {
-            loop: true,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10
-                }
-            }
-        });
-    })
-</script>
+
 <!-- Продукция -->
 <section class="section" style="background: var(--secondary);">
 	<div class="intec-content">
