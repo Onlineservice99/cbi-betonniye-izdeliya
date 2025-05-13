@@ -52,6 +52,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f8f9fb;
+  max-width: 1384px;
+  margin: auto;
+}
+@media(max-width:768px){
+  .c-slider.c-slider-template-3 .widget-item-block-desktop {
+    display: contents;
+    text-decoration: none;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f8f9fb;
+  }
 }
 .c-slider.c-slider-template-3 .widget-item-video {
   position: absolute;
