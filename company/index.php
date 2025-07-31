@@ -576,6 +576,24 @@ body {
                             </a>
                         </div>
                     </div>
+
+					<div class="certificate-item">
+                        <!-- Изображение с Fancybox для просмотра -->
+                        <a href="/company/img/sertificate3.png" target="_blank">
+                            <img src="/company/img/sertificate3.png"
+                                 class="certificate-image"
+                                 alt="Сертификат соответствия 2025">
+                        </a>
+
+                        <!-- Отдельная ссылка для скачивания -->
+                        <div class="certificate-caption">
+                            <a href="/company/img/sertificate3.png"
+                               class="certificate-link"
+                               download="sertificate3.png"> <!-- Имя файла для сохранения -->
+                                Скачать Сертификат
+                            </a>
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>

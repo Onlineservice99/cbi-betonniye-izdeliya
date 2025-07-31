@@ -27,20 +27,46 @@ $APPLICATION->SetTitle("Прайс лист");
 table thead tr, table tbody tr, .category h3{text-align:center;}
 .custom-td{padding: 0 !important; width: 16.66%;}
 .custom-td-img{width: 100%;height: 85px !important;display: block;object-fit: cover;border: none;margin: 0 !important;border-radius: 0;max-width: unset !important;}
+.certificate-link {
+    color: #2d6e6e;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 2px solid #2d6e6e;
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.certificate-link:hover {
+    background: #2d6e6e;
+    color: white;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+.save-price{
+	text-align:center;
+	margin:20px 0px;
+}
 </style>
 <div class="container">
     <!-- Контакты -->
     <div class="row mb-5" data-aos="fade-up">
-        <div class="col-md-6">
+        <div class="col-md-6" style="text-align: center;">
             <h4>Адрес:</h4>
             <p>г. Рыбинск, ул. Окружная дорога, дом 24А</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="text-align: center;">
             <h4>Контакты:</h4>
-            <p>8(920) 127-98-87<br>rodionmx226@gmail.com</p>
+            <p>8(920) 127-98-87<br>cbi76@mail.ru</p>
         </div>
     </div>
-
+	<div class="save-price" data-aos="fade-up">
+		<a href="/price-list/price-list.pdf" 
+			class="certificate-link" 
+			download="price-list.pdf">
+				Скачать прайс-лист
+		</a>
+	</div>
     <!-- ЛИТЬЁ -->
     <div class="category" data-aos="fade-up">
         <h3>ЛИТЬЁ</h3>
@@ -70,12 +96,12 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
 					<tr>
 						<td>Цена</td>
-						<td class="gray">600 руб./м²<br>54.5 руб./шт.</td>
-						<td colspan="3" class="red">700 руб./м²<br>64 руб./шт.</td>
-						<td class="brown">700 руб./м²<br>64 руб./шт.</td>
-						<td colspan="3" class="yellow">700 руб./м²<br>64 руб./шт.</td>
-						<td class="black">700 руб./м²<br>64 руб./шт.</td>
-						<td colspan="2" class="orange">700 руб./м²<br>64 руб./шт.</td>
+						<td class="gray">750 руб./м²</td>
+						<td colspan="3" class="red">850 руб./м²</td>
+						<td class="brown">850 руб./м²</td>
+						<td colspan="3" class="yellow">850 руб./м²</td>
+						<td class="black">850 руб./м²</td>
+						<td colspan="2" class="orange">850 руб./м²</td>
 					</tr>
 					<!-- ---------------------------- -->
 					<tr>
@@ -89,12 +115,12 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
 					<tr>
 						<td>Цена</td>
-						<td class="gray">830 руб./м²<br>132,8 руб./шт.</td>
-						<td colspan="3" class="red">950 руб./м²<br>152 руб./шт.</td>
-						<td class="brown">950 руб./м²<br>152 руб. шт.</td>
-						<td colspan="3" class="yellow"> 950 руб./м²<br> 152 руб./шт.</td>
-						<td class="black">950 руб./м²<br>152 руб./шт.</td>
-						<td colspan="2" class="orange">950 руб./м²<br>152 руб./шт.</td>
+						<td class="gray">900 руб./м²</td>
+						<td colspan="3" class="red">1000 руб./м²</td>
+						<td class="brown">1000 руб./м²</td>
+						<td colspan="3" class="yellow"> 1000 руб./м²</td>
+						<td class="black">1000 руб./м²</td>
+						<td colspan="2" class="orange">1000 руб./м²</td>
 					</tr>
 					<!-- ---------------------------- -->
 					<tr>
@@ -108,12 +134,12 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
 					<tr>
 						<td>Цена</td>
-						<td class="gray">850 руб./м²<br>212,5 руб./шт.</td>
-						<td colspan="3" class="red">950 руб./м²<br>237,5 руб./шт.</td>
-						<td class="brown">950 руб./м²<br>237,5 руб./шт.</td>
-						<td colspan="3" class="yellow">950 руб./м²<br>237,5 руб./шт.</td>
-						<td class="black">950 руб./м²<br>237,5 руб./шт.</td>
-						<td colspan="2" class="orange">950 руб./м²<br>237,5 руб./шт.</td>
+						<td class="gray">1050 руб./м²</td>
+						<td colspan="3" class="red">1200 руб./м²</td>
+						<td class="brown">1200 руб./м²</td>
+						<td colspan="3" class="yellow">1200 руб./м²</td>
+						<td class="black">1200 руб./м²</td>
+						<td colspan="2" class="orange">1200 руб./м²</td>
 					</tr>
 					<!-- ---------------------------- -->
 					<tr>
@@ -127,12 +153,12 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
 					<tr>
 						<td>Цена</td>
-						<td class="gray">800 руб./м²<br>145,5 руб./шт.</td>
-						<td colspan="3" class="red">850 руб./м²<br>154,5 руб./шт.</td>
-						<td class="brown">850 руб./м²<br>154,5 руб./шт.</td>
-						<td colspan="3" class="yellow">850 руб./м²<br>154,5 руб./шт.</td>
-						<td class="black">850 руб./м²<br>154,5 руб./шт.</td>
-						<td colspan="2" class="orange">850 руб./м²<br>154,5 руб./шт.</td>
+						<td class="gray">950 руб./м²</td>
+						<td colspan="3" class="red">1100 руб./м²</td>
+						<td class="brown">1100 руб./м²</td>
+						<td colspan="3" class="yellow">1100 руб./м²</td>
+						<td class="black">1100 руб./м²</td>
+						<td colspan="2" class="orange">1100 руб./м²</td>
 					</tr>
 					<!-- ---------------------------- -->
 					<tr>
@@ -146,12 +172,12 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
 					<tr>
 						<td>Цена</td>
-						<td class="gray">500 руб./шт.</td>
-						<td colspan="3" class="red">550 руб./шт.</td>
-						<td class="brown">550 руб./шт.</td>
-						<td colspan="3" class="yellow">550 руб./шт.</td>
-						<td class="black">550 руб./шт.</td>
-						<td colspan="2" class="orange">550 руб./шт.</td>
+						<td class="gray">600 руб./шт.</td>
+						<td colspan="3" class="red">60 руб./шт.</td>
+						<td class="brown">600 руб./шт.</td>
+						<td colspan="3" class="yellow">600 руб./шт.</td>
+						<td class="black">600 руб./шт.</td>
+						<td colspan="2" class="orange">600 руб./шт.</td>
 					</tr>
 					<!-- ---------------------------- -->
 					<tr>
@@ -165,7 +191,7 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
 					<tr>
 						<td>Цена</td>
-						<td class="gray">500 руб./шт.</td>
+						<td class="gray">650 руб./шт.</td>
 						<td colspan="3" class="red">550 руб./шт.</td>
 						<td class="brown">550 руб./шт.</td>
 						<td colspan="3" class="yellow">550 руб./шт.</td>
@@ -184,7 +210,7 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
 					<tr>
 						<td>Цена</td>
-						<td class="gray">800 руб./шт.</td>
+						<td class="gray">900 руб./шт.</td>
 						<td colspan="3" class="red">900 руб./шт.</td>
 						<td class="brown">900 руб./шт.</td>
 						<td colspan="3" class="yellow">900 руб./шт.</td>
@@ -199,7 +225,7 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 
     <!-- БОРДЮРНЫЙ КАМЕНЬ -->
     <div class="category" data-aos="fade-up">
-        <h3>БОРДЮРНЫЙ КАМЕНЬ</h3>
+        <h3>САДОВЫЙ БОРДЮР</h3>
         <div class="price-table table-responsive">
             <table class="table table-bordered">
                 <thead>
@@ -216,7 +242,7 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
                 <tbody>
 					<!-- ---------------------------- -->
 					<tr>
-						<td>Бордюр садовый<br>500*200*50</td>
+						<td>Бордюр "50"<br>500*200*50</td>
 						<td class="gray"><img src="/price-list/img/bordur/grey.png" alt="Серый"></td>
 						<td class="red"></td>
 						<td class="brown"></td>
@@ -226,8 +252,8 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
                     <tr>
                         <td>Цена</td>
-                        <td class="gray">115 руб./шт.</td>
-                        <td colspan="5" class="special-note">Цена обсуждается по факту</td>
+                        <td class="gray">135 руб./шт.</td>
+                        <td colspan="5" class="special-note">Обсуждается по факту</td>
                     </tr>
 					<!-- ---------------------------- -->
 					<tr>
@@ -241,8 +267,8 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
                     <tr>
                         <td>Цена</td>
-                        <td class="gray">300 руб./шт.</td>
-                        <td colspan="5" class="special-note">Цена обсуждается по факту</td>
+                        <td class="gray">400 руб./шт.</td>
+                        <td colspan="5" class="special-note">Обсуждается по факту</td>
                     </tr>
 					<!-- ---------------------------- -->
 					<tr>
@@ -256,8 +282,8 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
                     <tr>
                         <td>Цена</td>
-                        <td class="gray">520 руб./шт.</td>
-                        <td colspan="5" class="special-note">Цена обсуждается по факту</td>
+                        <td class="gray">650 руб./шт.</td>
+                        <td colspan="5" class="special-note">Обсуждается по факту</td>
                     </tr>
 					<!-- ---------------------------- -->                
                 </tbody>
@@ -294,17 +320,17 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
                     <tr>
                         <td>Цена</td>
-                        <td class="gray">950 руб./м²</td>
-						<td class="red">1050 руб./м²</td>
-						<td class="brown">1050 руб./м²</td>
-						<td class="yellow">1050 руб./м²</td>
-						<td class="black">1050 руб./м²</td>
-						<td class="orange">1050 руб./м²</td>
+                        <td class="gray">1050 руб./м²</td>
+						<td class="red">1250 руб./м²</td>
+						<td class="brown">1250 руб./м²</td>
+						<td class="yellow">1250 руб./м²</td>
+						<td class="black">1250 руб./м²</td>
+						<td class="orange">1250 руб./м²</td>
                     </tr>
 					<!-- ---------------------------- -->
 					<tr>
                         <td>Колор микс</td>
-                        <td colspan="6" class="special-note">от 1350 руб./м²</td>
+                        <td colspan="6" class="special-note">от 1450 руб./м²</td>
                     </tr>
 					<!-- ---------------------------- -->
 					<tr>
@@ -318,17 +344,17 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
                     <tr>
                         <td>Цена</td>
-                        <td class="gray">1050 руб./м²</td>
-						<td class="red">1200 руб./м²</td>
-						<td class="brown">1200 руб./м²</td>
-						<td class="yellow">1200 руб./м²</td>
-						<td class="black">1200 руб./м²</td>
-						<td class="orange">1200 руб./м²</td>
+                        <td class="gray">1150 руб./м²</td>
+						<td class="red">1350 руб./м²</td>
+						<td class="brown">1350 руб./м²</td>
+						<td class="yellow">1350 руб./м²</td>
+						<td class="black">1350 руб./м²</td>
+						<td class="orange">1350 руб./м²</td>
                     </tr>
 					<!-- ---------------------------- -->     
 					<tr>
                         <td>Колор микс</td>
-                        <td colspan="6" class="special-note">от 1450 руб./м²</td>
+                        <td colspan="6" class="special-note">от 1500 руб./м²</td>
                     </tr>
 					<!-- ---------------------------- -->   
 					<tr>
@@ -342,12 +368,12 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
                     <tr>
                         <td>Цена</td>
-                        <td class="gray">1200 руб./м²</td>
-						<td class="red">1300 руб./м²</td>
-						<td class="brown">1300 руб./м²</td>
-						<td class="yellow">1300 руб./м²</td>
-						<td class="black">1300 руб./м²</td>
-						<td class="orange">1300 руб./м²</td>
+                        <td class="gray">1500 руб./м²</td>
+						<td class="red">1500 руб./м²</td>
+						<td class="brown">1500 руб./м²</td>
+						<td class="yellow">1500 руб./м²</td>
+						<td class="black">1500 руб./м²</td>
+						<td class="orange">1500 руб./м²</td>
                     </tr>
 					<!-- ---------------------------- -->      
                 </tbody>
@@ -384,8 +410,8 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
                     <tr>
                         <td>Цена</td>
-                        <td class="gray">120 руб./шт</td>
-						<td colspan="6" class="special-note">Цена обсуждается по факту от 500 шт.</td>
+                        <td class="gray">150 руб./шт</td>
+						<td colspan="6" class="special-note">Обсуждается по факту от 500 шт.</td>
                     </tr>
 					<!-- ---------------------------- -->
 					<tr>
@@ -399,7 +425,7 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
                     <tr>
                         <td>Цена</td>
-                        <td class="gray">250 руб./шт.</td>
+                        <td class="gray">280 руб./шт.</td>
                         <td colspan="6" class="special-note"></td>
                     </tr>
 					<!-- ---------------------------- -->
@@ -414,11 +440,11 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
                     <tr>
                         <td>Цена</td>
-                        <td colspan="7" class="special-note">300 руб./шт</td>
+                        <td colspan="7" class="special-note">350 руб./шт</td>
                     </tr>
 					<!-- ---------------------------- -->
 					<tr>
-						<td>Блок<br>рядовойй</td>
+						<td>Блок<br>рядовой</td>
 						<td class="gray"><img src="/price-list/img/block/radov/grey.png" alt="Серый"></td>
 						<td class="red"><img src="/price-list/img/block/radov/red.png" alt="Красный"></td>
 						<td class="brown"><img src="/price-list/img/block/radov/korich.png" alt="Коричневый"></td>
@@ -484,9 +510,9 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
 					</tr>
                     <tr>
                         <td>Цена</td>
-						<td class="gray">130 руб./шт.</td>
-						<td class="red">145 руб./шт.</td>
-						<td class="brown">145 руб./шт.</td>
+						<td class="gray">150 руб./шт.</td>
+						<td class="red">175 руб./шт.</td>
+						<td class="brown">175 руб./шт.</td>
                         <td class="yellow"></td>
 						<td class="black"></td>
 						<td class="orange"></td>
@@ -526,7 +552,7 @@ table thead tr, table tbody tr, .category h3{text-align:center;}
             </div>
         </div>
     </div>
-
+	<p style="color: #a7a7a7;text-align: center;">*Прайс не является публичной офертой</p>
 </div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
